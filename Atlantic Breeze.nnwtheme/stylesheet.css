@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2.1rem, 7vw, 3.4rem);
+  font-size: clamp(1.785rem, 5.95vw, 2.89rem);
   letter-spacing: -0.01em;
   margin: 0.6rem 0 0.9rem;
 }
@@ -192,6 +192,6 @@ th, td { border-bottom: 1px solid var(--rule); padding: 0.6rem 0.75rem; text-ali
 
 @media (max-width: 34rem) {
   body { padding: 1.1rem; }
-  h1 { font-size: 2rem; }
+  h1 { font-size: 1.7rem; }
   .articleBody > p:first-of-type::first-letter { font-size: 2.8em; }
 }
