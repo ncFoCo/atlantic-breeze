@@ -1,7 +1,7 @@
 <!-- nnw-theme-identity:start -->
-# NetNewsWire Theme Template
+# Atlantic Breeze
 
-A complete, self-guided workspace for creating and publishing a NetNewsWire theme.
+A NetNewsWire theme by [Nick Clements](https://github.com/ncFoCo).
 <!-- nnw-theme-identity:end -->
 
 The starter gives you:
