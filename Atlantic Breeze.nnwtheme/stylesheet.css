@@ -130,10 +130,24 @@ p, ul, ol, blockquote, pre, table, figure { margin-block: 1.3em; }
   color: var(--text);
   float: left;
   font-family: var(--headline-font);
-  font-size: 4.6em;
+  font-size: 3.2em;
   font-weight: 700;
   line-height: 0.82;
   margin: 0.03em 0.1em 0.3em 0;
+}
+
+/* Keep any block that isn't ordinary prose clear of the drop cap's float */
+.articleBody h2,
+.articleBody h3,
+.articleBody h4,
+.articleBody h5,
+.articleBody h6,
+.articleBody ul,
+.articleBody ol,
+.articleBody table,
+.articleBody figure,
+.articleBody pre {
+  clear: left;
 }
 
 blockquote {
@@ -200,5 +214,5 @@ th, td { border-bottom: 1px solid var(--rule); padding: 0.6rem 0.75rem; text-ali
 @media (max-width: 34rem) {
   body { padding: 1.1rem; }
   h1 { font-size: 1.5rem; }
-  .articleBody > p:first-of-type::first-letter { font-size: 3.6em; }
+  .articleBody > p:first-of-type::first-letter { font-size: 2.5em; }
 }
