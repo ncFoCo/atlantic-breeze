@@ -131,7 +131,7 @@ p, ul, ol, blockquote, pre, table, figure { margin-block: 1.3em; }
 }
 
 blockquote {
-  background: color-mix(in srgb, var(--accent) 12%, var(--canvas));
+  background: color-mix(in srgb, var(--accent) 7%, var(--canvas));
   border: none;
   border-left: 4px solid var(--accent);
   clear: left;
