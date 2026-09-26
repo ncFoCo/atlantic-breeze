@@ -7,9 +7,8 @@
   --rule: #14171a;
   --code-surface: #f0f0ee;
   --measure: 38rem;
-  --headline-font: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
-  --body-font: Georgia, Cambria, "Times New Roman", serif;
-  --display-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --headline-font: Garamond, "Apple Garamond", Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  --body-font: Garamond, "Apple Garamond", Georgia, Cambria, "Times New Roman", serif;
   --code-font: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 }
 
@@ -65,7 +64,7 @@ body {
   align-items: center;
   color: var(--accent);
   display: inline-flex;
-  font-family: var(--display-font);
+  font-family: var(--code-font);
   font-size: 0.78em;
   font-weight: 800;
   gap: 0.5rem;
@@ -91,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: clamp(1.6rem, 5.35vw, 2.6rem);
-  letter-spacing: -0.01em;
+  font-weight: 400;
   margin: 0.6rem 0 0.9rem;
 }
 
@@ -100,19 +99,26 @@ h1 a { color: inherit; text-decoration: none; }
 h2 { font-size: 1.5em; margin-top: 2em; font-style: italic; }
 h3 { font-size: 1.15em; margin-top: 1.7em; }
 
-.byline, .dateline {
-  color: var(--muted);
+.byline {
+  color: var(--text);
   display: inline;
-  font-family: var(--display-font);
-  font-size: 0.85em;
-  letter-spacing: 0.01em;
+  font-family: var(--headline-font);
+  font-size: 1.05em;
+  font-weight: 400;
+}
+
+.dateline {
+  color: var(--text);
+  display: inline;
+  font-family: var(--code-font);
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.byline { font-weight: 700; color: var(--text); }
 .dateline::before { content: " · "; }
 
-a { color: var(--accent); text-decoration-thickness: 0.08em; text-underline-offset: 0.14em; }
+a { color: var(--text); text-decoration-thickness: 0.08em; text-underline-offset: 0.14em; }
 a:hover { text-decoration-thickness: 0.14em; }
 
 p, ul, ol, blockquote, pre, table, figure { margin-block: 1.3em; }
@@ -121,10 +127,10 @@ p, ul, ol, blockquote, pre, table, figure { margin-block: 1.3em; }
 
 /* Drop cap on the opening paragraph, magazine-style */
 .articleBody > p:first-of-type::first-letter {
-  color: var(--accent);
+  color: var(--text);
   float: left;
   font-family: var(--headline-font);
-  font-size: 3.6em;
+  font-size: 4.6em;
   font-weight: 700;
   line-height: 0.82;
   margin: 0.03em 0.1em 0.3em 0;
@@ -161,7 +167,7 @@ img, video, audio, iframe { height: auto; max-width: 100%; }
 figure { margin-inline: 0; }
 figcaption {
   color: var(--muted);
-  font-family: var(--display-font);
+  font-family: var(--code-font);
   font-size: 0.8em;
   font-style: italic;
   margin-top: 0.5rem;
@@ -170,12 +176,12 @@ figcaption {
 
 .nnw-overflow { overflow-x: auto; }
 
-table { border-collapse: collapse; font-family: var(--display-font); font-size: 0.9em; width: 100%; }
+table { border-collapse: collapse; font-family: var(--code-font); font-size: 0.9em; width: 100%; }
 th, td { border-bottom: 1px solid var(--rule); padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; }
 
 .article-footer {
   border-top: 3px solid var(--rule);
-  font-family: var(--display-font);
+  font-family: var(--code-font);
   font-size: 0.85em;
   margin-top: 3rem;
   padding-top: 1.25rem;
@@ -194,5 +200,5 @@ th, td { border-bottom: 1px solid var(--rule); padding: 0.6rem 0.75rem; text-ali
 @media (max-width: 34rem) {
   body { padding: 1.1rem; }
   h1 { font-size: 1.5rem; }
-  .articleBody > p:first-of-type::first-letter { font-size: 2.8em; }
+  .articleBody > p:first-of-type::first-letter { font-size: 3.6em; }
 }
