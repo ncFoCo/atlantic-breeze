@@ -28,11 +28,11 @@
   -webkit-text-size-adjust: none;
 }
 
-.smallText   { font-size: 14px; }
-.mediumText  { font-size: 16px; }
-.largeText   { font-size: 18px; }
-.xlargeText, .xLargeText   { font-size: 20px; }
-.xxlargeText, .xxLargeText { font-size: 22px; }
+.articleBody.smallText   { font-size: 14px; }
+.articleBody.mediumText  { font-size: 16px; }
+.articleBody.largeText   { font-size: 18px; }
+.articleBody.xlargeText, .articleBody.xLargeText   { font-size: 20px; }
+.articleBody.xxlargeText, .articleBody.xxLargeText { font-size: 22px; }
 
 html {
   background: var(--canvas);
