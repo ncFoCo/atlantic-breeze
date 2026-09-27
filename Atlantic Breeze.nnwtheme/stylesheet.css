@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(1.6rem, 5.35vw, 2.6rem);
+  font-size: clamp(1.76rem, 5.885vw, 2.86rem);
   font-weight: 400;
   margin: 0.6rem 0 0.9rem;
 }
@@ -157,9 +157,9 @@ blockquote {
   clear: left;
   color: var(--text);
   font-family: var(--headline-font);
-  font-size: 1.1em;
   font-style: italic;
   margin-inline: 0;
+  margin-top: 1.7em;
   padding: 0.6em 1em 0.6em 1.2em;
   text-align: left;
 }
@@ -189,6 +189,14 @@ figcaption {
 }
 
 .nnw-overflow { overflow-x: auto; }
+
+.systemMessage {
+  color: var(--muted);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 table { border-collapse: collapse; font-family: var(--code-font); font-size: 0.9em; width: 100%; }
 th, td { border-bottom: 1px solid var(--rule); padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; }
